@@ -4,7 +4,7 @@ import static arviointi.OsasuoritustenArviointi.laskeArvosana;
 
 public class KurssinArviointi {
 
-    private static int viopeMaksimi = 58; // normaalitehtävien maksimipisteet (ilman bonuksia)
+    private static int viopeMaksimi = 65; // normaalitehtävien maksimipisteet (ilman bonuksia)
     private static int kokeenMaksimi = 25;
 
     public static int laskeLoppuarvosana(int tehtavienPisteet, int kokeenPisteet) {
