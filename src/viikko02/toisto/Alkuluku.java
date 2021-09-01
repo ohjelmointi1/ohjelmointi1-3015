@@ -4,7 +4,7 @@ public class Alkuluku {
 
     public static void main(String[] args) {
         // TODO: muista lisätä Scanner lopussa
-        int syote = 4;
+        int syote = 97;
 
         // yksisuuntainen lippu, muutetaan ainoastaan false'ksi,
         // ei koskaan takaisin true'ksi
@@ -16,6 +16,7 @@ public class Alkuluku {
 
             if (jakojaannos == 0) {
                 onAlkuluku = false;
+                break; // lopettaa etsimisen ensimmäiseen "osumaan"
             }
         }
 
