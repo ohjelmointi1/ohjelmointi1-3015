@@ -2,7 +2,7 @@ package viikko03.taulukot;
 
 import java.util.Arrays;
 
-public class MerkkijojoneSplit {
+public class MerkkijonojenSplit {
 
     public static void main(String[] args) {
         String nykyhetki = "2021-10-13T11:21:00";
