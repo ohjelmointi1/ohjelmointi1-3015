@@ -1,6 +1,7 @@
 package viikko04.metodit;
 
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class TulostaKellonaika {
 
@@ -26,12 +27,7 @@ public class TulostaKellonaika {
     }
 
     private static String nykyinenKellonaika() {
-        LocalTime nyt = LocalTime.now();
-        int minuutit = nyt.getMinute();
-        if (minuutit < 10) {
-            return nyt.getHour() + ":0" + minuutit;
-        } else {
-            return nyt.getHour() + ":" + minuutit;
-        }
+        DateTimeFormatter muotoilu = DateTimeFormatter.ofPattern("HH:mm");
+        return muotoilu.format(LocalTime.now());
     }
 }
