@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
 
+// Tämä luokka laskee päivät jouluun
 public class Joululaskuri {
 
     public static void main(String[] args) {
