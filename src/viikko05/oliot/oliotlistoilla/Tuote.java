@@ -12,6 +12,14 @@ public class Tuote {
         this.myyja = myyja;
     }
 
+    public void alennaHintaa(double alennus) {
+        this.hinta = this.hinta - alennus;
+
+        if (this.hinta < 0) {
+            this.hinta = 0;
+        }
+    }
+
     public void setNimi(String uusiNimi) {
         this.nimi = uusiNimi;
     }
@@ -26,5 +34,10 @@ public class Tuote {
 
     public String getMyyja() {
         return this.myyja;
+    }
+
+    @Override
+    public String toString() {
+        return this.nimi + "\n- hinta: " + this.hinta + " euroa\n- myyjä: " + this.myyja;
     }
 }
