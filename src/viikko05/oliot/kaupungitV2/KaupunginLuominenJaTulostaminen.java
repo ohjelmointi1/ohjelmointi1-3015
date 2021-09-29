@@ -11,7 +11,12 @@ public class KaupunginLuominenJaTulostaminen {
         System.out.println(hki.getNimi());
         System.out.println(hki.laskeVaestontiheys());
 
+        // tämä aiheuttaa poikkeuksen: (päivitetty 29.9.2021)
+        hki.setVakiluku(-1000);
+
         System.out.println(hki);
         System.out.println(esp);
+
+        System.out.println(hki.laskeVaestontiheys());
     }
 }

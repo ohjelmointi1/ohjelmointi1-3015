@@ -20,6 +20,14 @@ public class Kaupunki {
         this.nimi = uusiNimi;
     }
 
+    public void setVakiluku(int uusiVakiluku) {
+        if (uusiVakiluku >= 0) {
+            this.vakiluku = uusiVakiluku;
+        } else {
+            throw new IllegalArgumentException("Väkiluku ei saa olla negatiivinen");
+        }
+    }
+
     public double laskeVaestontiheys() {
         return this.vakiluku / this.pintaAla;
     }
