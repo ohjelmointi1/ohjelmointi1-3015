@@ -33,5 +33,7 @@ public class Maalaus {
         String muotoiltu = kaksiDesimaalia.format(maalinKulutus);
 
         System.out.println("Maalin tarve on " + muotoiltu + " litraa");
+        
+        System.out.println("Tarvitset " + Math.ceil(maalinKulutus / 2.7) + " kpl 2,7 litran maalipurkkeja.");
     }
 }
