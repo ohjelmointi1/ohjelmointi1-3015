@@ -7,6 +7,17 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Tämä tuntiesimerkki hyödyntää "Helsingin ja Espoon kaupunkipyörillä ajetut
+ * matkat" -tietoaineistoa, joka on saatavissa osoitteesta:
+ * https://www.avoindata.fi/data/fi/dataset/helsingin-ja-espoon-kaupunkipyorilla-ajatut-matkat
+ * 
+ * Koodin kokeilemiseksi tallenna itsellesi heinäkuun 2020 aineisto osoitteesta
+ * https://dev.hsl.fi/citybikes/od-trips-2020/2020-07.csv, ja siirrä se
+ * Java-projektin juurihakemistoon nimellä kaupunkipyorat-2020-07.csv.
+ * 
+ * Datan omistaa City Bike Finland ja sen lisenssi on CC-BY-4.0
+ */
 public class KaupunkiPyoraTilasto {
 
     public static void main(String[] args) {
