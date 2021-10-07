@@ -2,8 +2,6 @@ package viikko07.citybikes;
 
 import java.time.LocalDateTime;
 
-//﻿Departure,Return,Departure station id,Departure station name,Return station id,Return station name,Covered distance (m),Duration (sec.)
-//2020-07-31T23:59:57,2020-08-01T00:17:28,137,Arabian kauppakeskus,116,Linnanmäki,2411,1048
 public class BikeTrip {
 
     private LocalDateTime departureTime;
